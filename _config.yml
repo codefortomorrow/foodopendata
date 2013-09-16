@@ -99,12 +99,12 @@ google_analytics_tracking_id:
 facebook_like: false
 
 #prose.io settings 
-prose: 
-  rooturl: "source" 
-  metadata: 
-    "source/_posts": | 
-      layout: post 
-      title: "Title" 
-      comments: true
-      categories:  
-      published: true 
+#prose: 
+#  rooturl: "source" 
+#  metadata: 
+#    "source/_posts": | 
+#      layout: post 
+#      title: "Title" 
+#      comments: true
+#      categories:  
+#      published: true 
