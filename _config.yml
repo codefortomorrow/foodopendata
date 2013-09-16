@@ -103,8 +103,8 @@ prose:
   rooturl: "source" 
   metadata: 
     "source/_posts": | 
-    layout: post 
-    title: "Title" 
-    comments: true
-    categories:  
-    published: true 
+      layout: post 
+      title: "Title" 
+      comments: true
+      categories:  
+      published: true 
