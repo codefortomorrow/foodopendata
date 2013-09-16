@@ -261,7 +261,8 @@ multitask :push do
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch}"
+    #system "git push origin #{deploy_branch}"
+    system "git push origin #{deploy_branch}" --force --quiet
     puts "\n## Github Pages deploy complete"
   end
 end
@@ -326,7 +327,8 @@ task :setup_github_pages, :repo do |t, args|
       # If this is a user/organization pages repository, add the correct origin remote
       # and checkout the source branch for committing changes to the blog source.
       system "git remote add origin #{repo_url}"
-      puts "Added remote #{repo_url} as origin"
+      #puts "Added remote #{repo_url} as origin"
+      puts "Added remote as origin"
       system "git config branch.master.remote origin"
       puts "Set origin as default remote"
       system "git branch -m master source"
@@ -348,7 +350,8 @@ task :setup_github_pages, :repo do |t, args|
     system "git init"
     system "echo 'My Octopress Page is coming soon &hellip;' > index.html"
     system "git add ."
-    system "git commit -m \"Octopress init\""
+    #system "git commit -m \"Octopress init\""
+    system "git commit -m \"Octopress init\n\n[ci skip]\""
     system "git branch -m gh-pages" unless branch == 'master'
     system "git remote add origin #{repo_url}"
     rakefile = IO.read(__FILE__)
