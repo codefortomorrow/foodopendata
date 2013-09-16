@@ -1,0 +1,23 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+.section-title {
+    margin-bottom: 20px;
+    color: #428BCA;   
+}
+
+.section-body > h3 {
+    margin: 0;
+}
+
+.section-body > p {
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+img.contact-icon {
+    width: 30px;
+}
+
+body > header h2 {
+    color: #666;
+}

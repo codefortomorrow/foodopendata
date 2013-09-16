@@ -1,0 +1,64 @@
+---
+layout: page
+sidebar: false
+title: false
+footer: false
+<!--date: 2013-09-10 20:11
+comments: true
+sharing: true-->
+---
+<h1>敬請期待 Coming soon...</h1>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h4>想接收《開放食庫》的活動訊息，或是在第一時間獲得 App 上市的通知？請留下您的 Email Address。</h4>
+        <br>
+        <form id="add-email" >
+            <div class="row">
+                <div class="col-lg-8">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <input id="name">
+                </div>
+                <div class="col-lg-4">
+                    <button type="submit" class="btn btn-default"> 送出 </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="modal fade" id="success-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">已收到您的Email</h4>
+                </div>
+                <div class="modal-body">
+                    <p>感謝您的訂閱，當有任何關於開放食庫的消息我們將優先通知您。</p>
+                    <p>謝謝！ </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+    <script>
+        var myDataRef = new Firebase('https://foodemail.firebaseio.com/');
+        $('#name').hide();
+        $('#add-email').submit(function(){
+            var email = $("#email").val();
+            var name = $("#name").val();
+            // this is used to prevent robot
+            if(name == "" && email != "") {
+                myDataRef.push({date: (new Date()).toString(), email: email});
+                $('#success-modal').modal();
+                $("#email").val("");
+            }
+            return false;
+        });
+    </script>
+</div>
