@@ -7,13 +7,15 @@ rvm:
 before_script:
 - git config --global user.name "xuehung"
 - git config --global user.email "xuehung@gmail.com"
-- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
-- rake setup_github_pages[$REPO_URL]
+#- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+#- rake setup_github_pages[$REPO_URL]
 script:
 - set LANG=zh_TW.UTF-8
 - set LC_ALL=zh_TW.UTF-8
 - rake generate
 after_script:
+- git config credential.helper "store --file=.git/credentials"
+- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - rake deploy
 env:
   global:
