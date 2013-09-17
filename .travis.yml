@@ -6,8 +6,8 @@ rvm:
   - 1.9.3
 before_script: 
   # Set the git config stuff, so Git stops yelling at us
-  #- git config --global user.name "wake"
-  #- git config --global user.email "wake.gs@gmail.com"
+  - git config --global user.name "xuehung"
+  - git config --global user.email "xuehung@gmail.com"
   # Set read-write git origin
   #- git remote set-url origin $REPO.git
   # Unpack ssh key for git
