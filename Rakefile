@@ -262,8 +262,8 @@ multitask :push do
     message = "Site updated at #{Time.now.utc}\n\n[ci skip]"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    #system "git push origin #{deploy_branch}"
-    system "git push origin #{deploy_branch} --force --quiet"
+    system "git push origin #{deploy_branch}"
+    #system "git push origin #{deploy_branch} --force --quiet"
     puts "\n## Github Pages deploy complete"
   end
 end
