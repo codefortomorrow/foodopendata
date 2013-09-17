@@ -1,39 +1,21 @@
 branches:
   only:
-    - master
+  - master
 language: ruby
 rvm:
-  - 1.9.3
-before_script: 
-  # Set the git config stuff, so Git stops yelling at us
-  - git config --global user.name "xuehung"
-  - git config --global user.email "xuehung@gmail.com"
-  # Set read-write git origin
-  #- git remote set-url origin $REPO.git
-  # Unpack ssh key for git
-  #- echo -n $id_rsa_{00..30} >> ~/.ssh/id_rsa_base64
-  #- base64 --decode --ignore-garbage ~/.ssh/id_rsa_base64 > ~/.ssh/id_rsa
-  #- chmod 600 ~/.ssh/id_rsa
-  # Disable SSH server fingerprint verification
-  #- echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-  - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
-  - rake setup_github_pages[$REPO_URL]
-  # Set deployment target to github pages
-  #- rake setup_github_pages[$REPO]
-  # To reset the 'url' to the custom domain in '_config.yml'
-  #- git checkout -- _config.yml
+- 1.9.3
+before_script:
+- git config --global user.name "xuehung"
+- git config --global user.email "xuehung@gmail.com"
+- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+- rake setup_github_pages[$REPO_URL]
 script:
-  # Set language to zh-TW utf-8
-  - set LANG=zh_TW.UTF-8
-  - set LC_ALL=zh_TW.UTF-8
-  # Generate site
-  - rake generate
+- set LANG=zh_TW.UTF-8
+- set LC_ALL=zh_TW.UTF-8
+- rake generate
 after_script:
-  # Deploy!
-  - rake deploy
+- rake deploy
 env:
   global:
-    # Repo read-write address
-    #- REPO="git@github.com:codefortomorrow/foodopendata.git"
-    - GH_REPO="codefortomorrow/foodopendata"
-    - secure: "L7E229D3y0jlJPpeNsOQnZHtoDZjWrBl4F/XGX0xsgRKP9Sz9roVwKVuIKea5AEvPZpZ2hEhGFEq2+lQFSj7nWOJE7oxH/0ILAdJXFP+JJnFJzFGSPUTwRrd2iGKCuPOJlQnev1EkuBTDBM1okxoNDy/B9GtHDEK9hA8iIu7mUI="
+  - GH_REPO="codefortomorrow/foodopendata"
+  - secure: UoSGQaJXT3kXXhefGnKMHTtI54Q2KB3l0R81YhxTicyOzjjQDDIL/qddrulAeg/zHHcupGiaTjTeh/W8HIeAklArpwySRyWSuq+jwSGIeSwmA06nqGe5j14SKprMMkG92d5swGqHRti4sRCul5JP/izwPX6Gbosfudql4BeNHjA=
