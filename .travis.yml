@@ -20,4 +20,4 @@ after_script:
 env:
   global:
   - GH_REPO="codefortomorrow/foodopendata"
-  - secure: "jQym6hfQb+maJJfIVy7GiIKScspj+IRzPnfUVIeQyzyDiHNtxbqd+iGJrc5zChWPhOzbcb6WSP/TzQrXmFNgH5ySjNcZxZKDka2A6rZmj59iUkCERW+WIev60eNC/4rQk89YSu4Z1yk4UvMfkQ9ljBzYkIq47N8qBOh8OoS/qd8="
+  - secure: SPtYuqVW182Mu6uEGyA3+cui6FHro+VCH6/hJgKCxQna10hpC7182jvGzejgJG3Q4yy/1ZSiHgUCpFDpn13dxY9vfkhUm7UTDKk5qSsYcOyL1d/Eq2MAmeLDQu8faNlaXBzM+hWts27fwYAhEJyRPh+HOQnJdWJaZnh35H2mgnc=
