@@ -3,11 +3,12 @@ published:
   - true
   - "true"
 layout: post
-title: Title
+title: 
+  - 志工職缺：iOS/Android UI Designers
+  - Title
 comments: "true"
 ---
 
-## 志工職缺：iOS/Android UI Designers
 《開放食庫》正在徵求 iOS 和 Android 的 UI designers. 
 
 本計畫涵蓋範圍頗廣，包跨食品資料的蒐集、分析、一直到開發消費者和商業端的應用服務。
@@ -32,13 +33,3 @@ UI Designer Volunteer Job:
 - [Apple User Experience Guidelines](http://youtu.be/gUobNDmHnzM "Title")
 - [Google I/O 2013 - Android Design for UI Developers](http://youtu.be/Jl3-lzlzOJI "Title")
 - [Android Studio Tutorial](http://youtu.be/to8hSys0AHw "Title")
-
-
-
-
-
-
-
-
-
-
