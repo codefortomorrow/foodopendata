@@ -1,12 +1,10 @@
 ---
-published: 
-  - true
-  - "true"
 layout: post
-title: 
-  - 志工職缺：iOS/Android UI Designers
-  - Title
-comments: "true"
+date: 2013-09-23 15:31
+title: "志工職缺：iOS/Android UI Designers"
+comments: true
+author: CK
+categories: 
 ---
 
 《開放食庫》正在徵求 iOS 和 Android 的 UI designers. 
