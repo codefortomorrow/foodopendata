@@ -12,7 +12,7 @@ published:
   - "true"
 ---
 
-![](http://www.flickr.com/photos/25900612@N05/9889566395/in/pool-codefortomorrow)
+![](http://farm6.staticflickr.com/5546/9889566395_8d31e742ec_o.png)
 
 九月，真是開放食庫團隊工作的好時光。
 
