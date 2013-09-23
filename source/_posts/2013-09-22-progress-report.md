@@ -1,13 +1,18 @@
 ---
 layout: post
-title: "忙碌充實的九月天"
-date: 2013-09-22 22:05
-comments: true
+title: 忙碌充實的九月天
+date: "2013-09-22 22:05"
+comments: 
+  - true
+  - "true"
 author: CK
-categories: 
+categories: null
+published: 
+  - true
+  - "true"
 ---
 
-![](https://lh4.googleusercontent.com/-QV9iJNCTV4w/Uj71B_BGGPI/AAAAAAAAMzw/mlyHBmERoA4/s320/PBS+Interview.png)
+![](http://www.flickr.com/photos/25900612@N05/9889566395/in/pool-codefortomorrow)
 
 九月，真是開放食庫團隊工作的好時光。
 
@@ -32,5 +37,3 @@ categories:
 * 拜訪負責食品 GMP 認證的[台灣食品產業發展協會](http://tfida.smartweb.tw/)
 * 拜訪國內各大食品製造公司
 * 台北市電腦公會開放資料聯盟所舉辦的[食品營養圓桌交流會](http://seminars.tca.org.tw/D15j00352.aspx) (9/25)
-
-
