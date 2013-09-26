@@ -18,6 +18,30 @@ img.contact-icon {
     width: 30px;
 }
 
+.social-contact li, .social-contact li a {
+    border: 0;
+    margin-left: 0;
+}
+
 body > header h2 {
     color: #666;
 }
+
+article ol, article ul{
+    margin-left: 40px;
+}
+
+// for tream member
+.team-info {
+    text-align: center
+}
+.member-info {
+    width: 150px;
+}
+img.member-pic {
+    box-shadow: none;
+    width: 120px;
+    border: 0;
+}
+
+

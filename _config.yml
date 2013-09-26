@@ -6,7 +6,7 @@ url: http://codefortomorrow.github.io/foodopendata
 title: 開放食庫Food Open Data
 subtitle: 飲食革命，從認識你吃的食物開始。
 author: Food Open Data
-simple_search: http://google.com/search
+#simple_search: http://google.com/search
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /foodopendata/atom.xml
+#subscribe_rss: /foodopendata/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
