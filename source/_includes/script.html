@@ -1,0 +1,13 @@
+
+<script type="text/javascript">
+    $(function() {
+        $('.contact-tooltip').tooltip();
+        oldDomain = 'http://wiki.codefortomorrow.org/foodopendata'
+        newDomain = 'http://food.codefortomorrow.org'
+        lo = String(window.location);
+        if(lo.indexOf(oldDomain)!=-1) {
+            newLocation = lo.replace(oldDomain, newDomain);
+            window.location.assign(newLocation);
+        }
+    });
+</script>

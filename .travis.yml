@@ -9,6 +9,8 @@ before_script:
 - git config --global user.email "xuehung@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 - rake setup_github_pages[$REPO_URL]
+# To reset the 'url' to the custom domain in '_config.yml'
+- git checkout -- _config.yml
 script:
 - set LANG=zh_TW.UTF-8
 - set LC_ALL=zh_TW.UTF-8
