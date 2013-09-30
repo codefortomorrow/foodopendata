@@ -30,6 +30,8 @@ search_for_imgs().each do |img|
             puts "\tmv #{img} #{$root}/#{$img_dir}/#{subdirname}/#{img}"
             FileUtils.mkdir("#{$root}/#{$img_dir}/#{subdirname}")
             FileUtils.mv(img, "#{$root}/#{$img_dir}/#{subdirname}/#{img}")
+            puts "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
+            system "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
         end
     end
 end

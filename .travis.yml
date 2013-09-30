@@ -13,6 +13,7 @@ before_script:
 - git checkout -- _config.yml
 # To deal with images
 - ruby processimg.rb  
+- git commit -a -m "[ci skip]"
 script:
 - set LANG=zh_TW.UTF-8
 - set LC_ALL=zh_TW.UTF-8
