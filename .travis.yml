@@ -24,6 +24,7 @@ after_script:
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - rake deploy
+- git remote -v
 - git push origin master
 env:
   global:
