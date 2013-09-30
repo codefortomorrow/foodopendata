@@ -107,3 +107,4 @@ prose:
       title: "Title"
       comments: true
       published: true
+      author: ""

@@ -22,7 +22,7 @@ search_for_imgs().each do |img|
         if mdcontent.index(img)
             puts "\tFind #{img} refered in #{mdfilename}"
             subdirname = mdfilename.chomp(File.extname(mdfilename))
-            mdcontent.gsub!("#{$posts_dir}/#{img}", "/images/blog/#{subdirname}/#{img}")
+            mdcontent.gsub!("#{$posts_dir}/#{img}", "images/blog/#{subdirname}/#{img}")
             puts "\t#{$posts_dir}/#{img} is replaced with /images/blog/#{subdirname}/#{img}"
             File.open(mdfilename, 'w') do |f|
                f.write  mdcontent
