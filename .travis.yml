@@ -7,7 +7,7 @@ rvm:
 notifications:
   email: false
 before_script:
-- git branch master
+- git checkout master
 - git config --global user.name "xuehung"
 - git config --global user.email "xuehung@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
