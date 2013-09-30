@@ -354,7 +354,6 @@ task :setup_github_pages, :repo do |t, args|
     #system "git commit -m \"Octopress init\""
     system "git commit -m \"Octopress init\n\n[ci skip]\""
     system "git branch -m gh-pages" unless branch == 'master'
-    puts "git remote add origin #{repo_url}"
     system "git remote add origin #{repo_url}"
     rakefile = IO.read(__FILE__)
     rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
