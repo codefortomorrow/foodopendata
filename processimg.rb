@@ -26,6 +26,7 @@ search_for_imgs().each do |img|
             # build correspond directory
             dir = "#{$root}/#{$img_dir}/#{subdirname}"
             puts "#{dir} exists" if Dir.exists?(dir)
+            puts "I am going to mkdir: #{dir}" if not Dir.exists?(dir)
             if not Dir.exist?(dir)
                 FileUtils.mkdir("#{$root}/#{$img_dir}/#{subdirname}")
             end
