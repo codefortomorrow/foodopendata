@@ -7,7 +7,7 @@ rvm:
 notifications:
   email: false
 before_script:
-- git branch
+- git branch master
 - git config --global user.name "xuehung"
 - git config --global user.email "xuehung@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
@@ -26,7 +26,7 @@ before_script:
 - git branch
 - git remote set-url origin https://github.com/codefortomorrow/foodopendata.git
 - git remote -v
-- git push origin master
+#- git push origin master
 script:
 - set LANG=zh_TW.UTF-8
 - set LC_ALL=zh_TW.UTF-8
