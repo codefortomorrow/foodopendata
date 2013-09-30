@@ -7,11 +7,16 @@ rvm:
 notifications:
   email: false
 before_script:
+- git branch
 - git config --global user.name "xuehung"
 - git config --global user.email "xuehung@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 - rake setup_github_pages[$REPO_URL]
+# To set the credential
+- git config credential.helper "store --file=.git/credentials"
+- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 # To reset the 'url' to the custom domain in '_config.yml'
+- git branch
 - git checkout -- _config.yml
 # To deal with images
 - ruby processimg.rb  
@@ -27,8 +32,6 @@ script:
 - set LC_ALL=zh_TW.UTF-8
 - rake generate
 after_script:
-- git config credential.helper "store --file=.git/credentials"
-- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 #- rake deploy
 env:
   global:
