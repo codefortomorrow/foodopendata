@@ -22,14 +22,24 @@ search_for_imgs().each do |img|
         if mdcontent.index(img)
             puts "\tFind #{img} refered in #{mdfilename}"
             subdirname = mdfilename.chomp(File.extname(mdfilename))
-            mdcontent.gsub!("#{$posts_dir}/#{img}", "images/blog/#{subdirname}/#{img}")
-            puts "\t#{$posts_dir}/#{img} is replaced with /images/blog/#{subdirname}/#{img}"
+
+            # build correspond directory
+            dir = "#{$root}/#{$img_dir}/#{subdirname}"
+            puts "#{dir} exists" if Dir.exists?(dir)
+            if not Dir.exist?(dir)
+                FileUtils.mkdir("#{$root}/#{$img_dir}/#{subdirname}")
+            end
+            puts "\tmv #{img} #{$root}/#{$img_dir}/#{subdirname}/#{img}"
+            FileUtils.mv(img, "#{$root}/#{$img_dir}/#{subdirname}/#{img}")
+
+            # modify the links in the post
+            mdcontent.gsub!("/#{$posts_dir}/#{img}", "/images/blog/#{subdirname}/#{img}")
+            puts "\t/#{$posts_dir}/#{img} is replaced with /images/blog/#{subdirname}/#{img}"
             File.open(mdfilename, 'w') do |f|
                f.write  mdcontent
             end
-            puts "\tmv #{img} #{$root}/#{$img_dir}/#{subdirname}/#{img}"
-            FileUtils.mkdir("#{$root}/#{$img_dir}/#{subdirname}")
-            FileUtils.mv(img, "#{$root}/#{$img_dir}/#{subdirname}/#{img}")
+
+            # git add
             puts "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
             system "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
         end
