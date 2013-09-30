@@ -34,21 +34,21 @@ search_for_imgs().each do |img|
             puts "\t#{$root}/#{$img_dir}: #{Dir.exists?($root+"/"+$img_dir)}"
 
             if not Dir.exist?(dir)
-                #FileUtils.mkdir("#{$root}/#{$img_dir}/#{subdirname}")
+                FileUtils.mkdir("#{$root}/#{$img_dir}/#{subdirname}")
             end
             puts "\tmv #{img} #{$root}/#{$img_dir}/#{subdirname}/#{img}"
-            #FileUtils.mv(img, "#{$root}/#{$img_dir}/#{subdirname}/#{img}")
+            FileUtils.mv(img, "#{$root}/#{$img_dir}/#{subdirname}/#{img}")
 
             # modify the links in the post
             mdcontent.gsub!("/#{$posts_dir}/#{img}", "/images/blog/#{subdirname}/#{img}")
             puts "\t/#{$posts_dir}/#{img} is replaced with /images/blog/#{subdirname}/#{img}"
-            #File.open(mdfilename, 'w') do |f|
-               #f.write  mdcontent
-            #end
+            File.open(mdfilename, 'w') do |f|
+               f.write  mdcontent
+            end
 
             # git add
             puts "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
-            #system "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
+            system "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
         end
     end
 end
