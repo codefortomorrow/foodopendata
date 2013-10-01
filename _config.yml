@@ -102,7 +102,7 @@ facebook_like: false
 # reference:
 #   https://github.com/trunkclub/trunkclub.github.io/blob/source/_config.yml#L107-L148
 prose:
-  rooturl: "source"
+  rooturl: "source/_posts"
   media: "source/images/blog"
   metadata:
     source/_posts:
