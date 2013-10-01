@@ -16,23 +16,21 @@ before_script:
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 # To reset the 'url' to the custom domain in '_config.yml'
-- git branch
 - git checkout -- _config.yml
 # To deal with images
 - ruby processimg.rb  
 - git status
 - git commit -a -m "[ci skip]"
 # To setup remote repo to push master branch
-- git branch
 - git remote set-url origin https://github.com/codefortomorrow/foodopendata.git
 - git remote -v
-#- git push origin master
+- git push origin master
 script:
 - set LANG=zh_TW.UTF-8
 - set LC_ALL=zh_TW.UTF-8
 - rake generate
 after_script:
-#- rake deploy
+- rake deploy
 env:
   global:
   - GH_REPO="codefortomorrow/foodopendata"
