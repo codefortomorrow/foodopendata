@@ -106,16 +106,12 @@ prose:
   media: "source/images/blog"
   metadata:
     source/_posts:
+      published: true
+      title: "Title"
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: "It Is The Title"
-          type: "text"
       - name: "author"
         field:
           element: "text"
