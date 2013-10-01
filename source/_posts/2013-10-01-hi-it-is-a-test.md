@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Hi it is a test
 author: Mike
 ---
@@ -11,4 +11,4 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 
 
 
-![L1000051-1.JPG](/source/images/blog/L1000051-1.JPG)
+![L1000051-1.JPG](/images/blog/L1000051-1.JPG)
