@@ -14,24 +14,20 @@ def mvfile(src, dst)
     FileUtils.mv(src, dst)
 end
 
+commit = :false
+
 Dir.chdir($posts_dir)
 search_for_imgs().each do |img|
     puts "Now processing #{img}..."
     Dir.glob("*.{md,markdown}").each do |mdfilename|
         mdcontent = IO.read(mdfilename)
         if mdcontent.index(img)
+            commit = :true
             puts "\tFind #{img} refered in #{mdfilename}"
             subdirname = mdfilename.chomp(File.extname(mdfilename))
 
             # build correspond directory
             dir = "#{$root}/#{$img_dir}/#{subdirname}"
-            puts "\t#{dir} exists" if Dir.exists?(dir)
-            puts "\tI am going to mkdir: #{dir}" if not Dir.exists?(dir)
-
-            puts "\t#{$root}: #{Dir.exists?($root)}"
-            puts "\t#{$root}/source: #{Dir.exists?($root+"/source")}"
-            puts "\t#{$root}/source/images: #{Dir.exists?($root+"/source/images")}"
-            puts "\t#{$root}/#{$img_dir}: #{Dir.exists?($root+"/"+$img_dir)}"
 
             if not Dir.exist?(dir)
                 FileUtils.mkdir("#{$root}/#{$img_dir}/#{subdirname}")
@@ -51,4 +47,11 @@ search_for_imgs().each do |img|
             system "git add #{$root}/#{$img_dir}/#{subdirname}/#{img}"
         end
     end
+end
+
+if commit == :true
+    system "git commit -a -m \"[ci skip]\""
+    # To setup remote repo to push master branch
+    system "git remote set-url origin https://github.com/codefortomorrow/foodopendata.git"
+    system "git push origin master"
 end

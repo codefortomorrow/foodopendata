@@ -19,12 +19,6 @@ before_script:
 - git checkout -- _config.yml
 # To deal with images
 - ruby processimg.rb  
-- git status
-- git commit -a -m "[ci skip]"
-# To setup remote repo to push master branch
-- git remote set-url origin https://github.com/codefortomorrow/foodopendata.git
-- git remote -v
-- git push origin master
 script:
 - set LANG=zh_TW.UTF-8
 - set LC_ALL=zh_TW.UTF-8
