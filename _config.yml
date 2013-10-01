@@ -105,7 +105,8 @@ prose:
   rooturl: "source/_posts"
   media: "source/images/blog"
   metadata:
-    source/_posts:
+    "source/_posts": |
+      layout: post
       published: true
       title: "Title"
       comment: true
@@ -122,11 +123,3 @@ prose:
 #          value: ""
 #          type: "text"
           
-#  metadata:
-#    "source/_posts": |
-#      layout: post
-#      title: "Title"
-#      comments: true
-#      published: true
-#      author: ""
-
