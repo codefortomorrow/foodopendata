@@ -116,12 +116,12 @@ prose:
           label: "Title"
           value: "It Is The Title"
           type: "text"
-          - name: "author"
-            field:
-              element: "text"
-              label: "Author"
-              value: ""
-              type: "text"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+          type: "text"
 #  metadata:
 #    "source/_posts": |
 #      layout: post
