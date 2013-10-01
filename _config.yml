@@ -98,14 +98,35 @@ google_analytics_tracking_id:
 # Facebook Like
 facebook_like: false
 
-#prose.io settings 
+# prose.io settings
+# reference:
+#   https://github.com/trunkclub/trunkclub.github.io/blob/source/_config.yml#L107-L148
 prose:
   rooturl: "source"
   media: "source/images/blog"
   metadata:
-    "source/_posts": |
-      layout: post
-      title: "Title"
-      comments: true
-      published: true
-      author: ""
+    source/_posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: "It Is The Title"
+          type: "text"
+          - name: "author"
+            field:
+              element: "text"
+              label: "Author"
+              value: ""
+              type: "text"
+#  metadata:
+#    "source/_posts": |
+#      layout: post
+#      title: "Title"
+#      comments: true
+#      published: true
+#      author: ""
+
