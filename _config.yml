@@ -102,6 +102,7 @@ facebook_like: false
 # reference:
 #   https://github.com/trunkclub/trunkclub.github.io/blob/source/_config.yml#L107-L148
 prose:
+  siteurl: "http://food.codefortomorrow.org"
   rooturl: "source/_posts"
   media: "source/images/blog"
   metadata:
