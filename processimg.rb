@@ -1,6 +1,6 @@
 require 'fileutils'
 
-$img_extentions = "jpg,png,jpeg,bmp" # any space is not allowd
+$img_extentions = "jpg,png,jpeg,bmp,JPG,JPEG,BMP,PNG" # any space is not allowd
 $root = Dir.getwd()
 $posts_dir = "source/_posts"
 $img_dir = "source/images/blog"
