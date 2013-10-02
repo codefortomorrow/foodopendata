@@ -36,12 +36,20 @@ article ol, article ul{
     text-align: center
 }
 .member-info {
-    width: 150px;
+    width: 200px;
 }
 img.member-pic {
     box-shadow: none;
-    width: 120px;
+    width: 130px;
     border: 0;
+}
+h4.member-name {
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+h5.member-position {
+    color: #666;
 }
 
 
