@@ -55,3 +55,4 @@ if commit == :true
     system "git remote set-url origin https://github.com/codefortomorrow/foodopendata.git"
     system "git push origin master"
 end
+
