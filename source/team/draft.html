@@ -56,7 +56,13 @@ sharing: true-->
         {% for member in row.member %}
             <div class="col-lg-2">
                 <div class="member-info">
-                    <a href="mailto:{{ member.email }}"><img class="member-pic img-circle" src="
+                    <a target="_blank" href="
+                    {% if member.website %}
+                        {{ member.website }}
+                    {% else %}
+                        mailto:{{ member.email }}
+                    {% endif %}
+                    "><img class="member-pic img-circle" src="
                     {% if member.imglink %}
                         {{ member.imglink }}
                     {% else %}

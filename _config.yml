@@ -98,8 +98,10 @@ google_analytics_tracking_id:
 # Facebook Like
 facebook_like: false
 
-# prose.io settings
-# reference:
+# ----------------------- #
+#   Prose.io Settings     #
+# ----------------------- #
+# see for detail:
 #   https://github.com/trunkclub/trunkclub.github.io/blob/source/_config.yml#L107-L148
 prose:
   rooturl: "source/_posts"
@@ -123,8 +125,9 @@ prose:
 #          value: ""
 #          type: "text"
          
-
-# team list
+# ----------------------- #
+#      Team Member        #
+# ----------------------- #
 team:
   - position: Other
     member:
@@ -143,8 +146,8 @@ team:
         email: yleader@gmail.com
 
       - name: 李易修
-        position: Other
         email: lis186@gmail.com
+        website: http://www.lis186.com
 
       - name: 映竹
         position: Consumer
@@ -157,6 +160,7 @@ team:
 
       - name: Mike Cheng
         email: xuehung@gmail.com
+        imglink: https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c50.50.621.621/s160x160/75900_541805579166957_272900091_n.jpg
 
       - name: Evan Li
         email: jenghung@gmail.com
@@ -179,11 +183,15 @@ team:
       - name: Beti Chiang
         email: beti2004@gmail.com
 
+      - name: Danny Chang 
+        email: dannyrealfox@gmail.com 
+
   - position: App Developer
     member:
       - name: Chen Hao Lin
         email: georgelin422@gmail.com
         imglink: https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/c48.20.462.462/s160x160/1239047_10151688130452483_1027079699_n.jpg
+        website: http://www.linkedin.com/pub/chen-hao-lin/52/a67/426
 
       - name: Chun Wei Lee
         email: jessy1092@gmail.com
