@@ -1,0 +1,79 @@
+---
+layout: page
+sidebar: false
+title: false
+footer: false
+<!--date: 2013-09-10 20:11
+comments: true
+sharing: true-->
+---
+<h3>
+    <strong>《開放食庫》
+            </strong>是由<strong>
+            <a target="_blank" href="http://codefortomorrow.org/">Code for Tomorrow</a></strong>
+    所管理的計畫。
+</h3>
+<br>
+<hr>
+<br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h1 class="section-title"> 加入我們 </h1>
+        <div class="section-body">
+            <p>歡迎有以下經驗的人加入我們：</p>
+            <ul>
+                <li>Android UI Designer</li>
+                <li>iOS UI Designer</li>
+            <ul>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h1 class="section-title"> 聯絡我們 </h1>
+        <div class="section-body">
+            <p>您目前可以在以下的 social media 找到我們：</p>
+            <ul style="margin-left: 30px"><li><a href="https://www.facebook.com/groups/foodopendata/">開放食庫 Facebook</a></li>
+                <li><a href="http://groups.google.com/group/codefortomorrow">Google Groups</a></li>
+                <li><a href="https://plus.google.com/communities/114030076209648929334">Google+ Communities</a></li>
+                <li>Twitter: @codefortomorrow</li>
+                <li>IRC: Freenode #codefortomorrow</li>
+                <li>Email: ask [at] codefortomorrow.org</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<br>
+<hr>
+<br>
+
+
+<h1 class="section-title"> 團隊成員 </h1>
+<div class="team-info">
+{% for row in site.team %}
+    <div class="row">
+        {% for member in row.member %}
+            <div class="col-lg-2">
+                <div class="member-info">
+                    <a href="mailto:{{ member.email }}"><img class="member-pic img-circle" src="
+                    {% if member.imglink %}
+                        {{ member.imglink }}
+                    {% else %}
+                        /images/profile_sample.jpg
+                    {% endif %}
+                    "/></a>
+                    <h4 class="member-name"> {{ member.name }} </h4>
+                    <h5 class="member-position">
+                    {% if member.position %}
+                        {{ member.position }}
+                    {% else %}
+                         {{ row.position }}
+                    {% endif %}
+                    </h5>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
