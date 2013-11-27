@@ -8,7 +8,7 @@ comment: "true"
 author: CK
 ---
 
-[Code for Tomorrow](http://codefortomorrow.org/) 所發起的《開放食庫》計畫 ，是一個以社群方式管理的計畫，而所有參與夥伴都是運用私人時間支援的志工。從今年四月份的地球日工作坊算起，迄今不過短短七個月的時間，我們已經達成一些值得自豪的成就：
+[Code for Tomorrow](http://codefortomorrow.org/) 所發起的《開放食庫》計畫 ，是一個以社群方式管理的計畫，而所有參與夥伴都是運用私人時間支援的志工。從今年四月份的[地球日工作坊](https://hackpad.com/Earth-Day-Workshop-wHruQeE3h36 "飲食革命才剛開始，同志請繼續努力")算起，迄今不過短短七個月的時間，我們已經達成一些值得自豪的成就：
 
 - 以「未立案之人民團體」的身分，和國內與食品相關的產官學機構進行過一對一的會議，包括[行政院科技會報](http://www.bost.ey.gov.tw/)、[政府食品雲計畫的執行單位](http://www.twfoodtrace.org.tw/index.php)、[經濟部工業局](http://www.moeaidb.gov.tw/)、[台灣營養基金會](http://www.nutritiontaiwan.org.tw/)、[消費者文教基金會](http://www.consumers.org.tw/)、[台灣營養基金會](http://www.nutritiontaiwan.org.tw/)、[台灣食品產業發展協會](http://tfida.smartweb.tw/)、[商品條碼策進會](http://www.gs1tw.org/twct/web/index.jsp)、以及一些知名不具的食品業界朋友等。非常感謝上述各單位的熱心指教，讓我們對於台灣食品供需的現況，有了相當程度的瞭解。
 - 盤點政府管理單位與食品業界所掌握的食品資料現況，確定我們想建立的食品資料庫，正是全國各界引頸企盼，卻無人站出來主動整合的。（不僅是資料有限的「食品雲」）
