@@ -11,7 +11,7 @@ before_script:
 - git config --global user.name "xuehung"
 - git config --global user.email "xuehung@gmail.com"
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
-- rake setup_github_pages[$REPO_URL]
+- bundle exec rake setup_github_pages[$REPO_URL]
 # To set the credential
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
@@ -22,7 +22,7 @@ before_script:
 script:
 - set LANG=zh_TW.UTF-8
 - set LC_ALL=zh_TW.UTF-8
-- rake generate
+- bundle exec rake generate
 after_script:
 - rake deploy
 env:
