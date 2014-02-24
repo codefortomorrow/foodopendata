@@ -24,7 +24,7 @@ script:
 - set LC_ALL=zh_TW.UTF-8
 - bundle exec rake generate
 after_script:
-- rake deploy
+- bundle exec rake deploy
 env:
   global:
   - GH_REPO="codefortomorrow/foodopendata"
