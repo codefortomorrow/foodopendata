@@ -22,6 +22,6 @@ author: CK
 
 我們打算繼續對食譜進行資料探勘，追本溯源，探索菜色派系的起源，推敲食材供需的微妙平衡。
 
-若您有任何建議或想法，歡迎來信 (ask@codefortomorrow.org)。
+若您有任何建議或想法，歡迎來信 (food@codefortomorrow.org)。
 
 
