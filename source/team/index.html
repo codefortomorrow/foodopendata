@@ -48,23 +48,42 @@ sharing: true-->
 <hr>
 <br>
 
-
 <h1 class="section-title"> 團隊成員 </h1>
 <div class="team-info">
-    <div class="row">
-        <div class="col-lg-3">
-            <div class="member-info">
-                <a href="mailto:xuehung@gmail.com"><img class="member-pic img-circle"
-            src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c50.50.621.621/s160x160/75900_541805579166957_272900091_n.jpg"
-            /></a>
-            <h4 class="member-name"> Mike Cheng </h4>
-            <h5 class="member-position"> Developer </h5>
-        </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="member-info">
-        </div>
-        </div>
+    <div>
+	{% for row in site.team %}
+	<h3>{{row.position}}</h3>
+	<ul>
+	    {% for member in row.member %}
+	    <li>
+	    {% if member.website %}
+	    <a href="{{member.website}}">{{member.name}}</a>
+	    {% elsif member.email %}
+	    <a href="mailto: {{member.email}}">{{member.name}}</a>
+	    {% else %}
+	    <span> {{member.name}} </span>
+	    {% endif %}
+	    </li>
+	    {% endfor %}
+	</ul>
+	{% endfor %}
+    </div>
+    <div>
+	{% for row in site.project %}
+    <h2>{{row.name}}</h2>
+	<ul>
+	    {% for member in row.member %}
+	    <li>
+	    {% if member.website %}
+	    <a href="{{member.website}}">{{member.name}}</a>
+	    {% elsif member.email %}
+	    <a href="mailto: {{member.email}}">{{member.name}}</a>
+	    {% else %}
+	    <span> {{member.name}} </span>
+	    {% endif %}
+	    </li>
+	    {% endfor %}
+	</ul>
+	{% endfor %}
     </div>
 </div>
-

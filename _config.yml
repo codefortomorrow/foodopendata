@@ -129,6 +129,14 @@ prose:
 # ----------------------- #
 #      Team Member        #
 # ----------------------- #
+project:
+  - name: 食譜解密
+    member:
+      - name: Chia-Kai Liu
+        email: chiakai.liu@gmail.com
+
+      - name: 張晃維 (Huang-Wei Chang)
+        website: http://www.hwchang.info/
 team:
   - position: Other
     member:
