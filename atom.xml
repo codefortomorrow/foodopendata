@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[開放食庫 Food Open Data]]></title>
+  <link href="http://food.codefortomorrow.org/atom.xml" rel="self"/>
+  <link href="http://food.codefortomorrow.org/"/>
+  <updated>2014-09-18T04:57:43+00:00</updated>
+  <id>http://food.codefortomorrow.org/</id>
+  <author>
+    <name><![CDATA[Food Open Data]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[食品安全的 80/20 法則]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2014/09/17/pareto-principle-for-food-safety-monitoring/"/>
+    <updated>2014-09-17T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2014/09/17/pareto-principle-for-food-safety-monitoring</id>
+    <content type="html"><![CDATA[<p>「80/20 法則」是管理學上用來處理資源分配的常見方法，目的在於花最少力氣，得到最大效果。</p>
+
+<p>比方說，只用 20% 的力氣，就能解決 80% 的問題。稍微要注意的是，這種方法是以少許力氣換得「最大」效果，而不追求百分之百的「完全」效果。因為，反過來說，若要解決最後面 20% 的問題，可能得花費 80% 的力氣。</p>
+
+<p>在食品安全議題上，該如何運用？</p>
+
+<p>我覺得有兩個應該嘗試的重點方向。</p>
+
+<h2>1. 關鍵食材</h2>
+
+<p>觀察開放食庫之前所分析整理的食譜資料，我們發現有些食材或是調味料在食物鏈上佔據著關鍵路徑，我們稱之為「<a href="http://food.codefortomorrow.org/blog/2014/03/26/a-preview-of-ingredient-network/">關鍵食材</a>」，例如橄欖油或是雞蛋，經常出現於眾多的食譜之中。</p>
+
+<p><img src="https://farm3.staticflickr.com/2837/13305289035_3221ff4888_o.png" alt="" /></p>
+
+<h2>2. 關鍵公司</h2>
+
+<p>台灣的食品產業，其實是個高度集中的產業。就食品類股的 21 家上市公司來看，其 2013 年的總營收，前三大公司就佔了將近八成的營業收入，而前八大的營收佔比更是超過整體市場的九成。（如下圖）</p>
+
+<p><img src="https://farm6.staticflickr.com/5594/15088229737_f315cecabd_b.jpg" alt="" /></p>
+
+<p>這意味著台灣人吃到肚子裡面的食物，大部分都是由這不到十家的公司所生產或銷售。雖然這只是一個極度簡化的模型，並未仔細評估外食市場的狀況，但是我認為雖不中亦不遠矣。（我們正在討論 80/20 法則，不是嗎？）</p>
+
+<p>說的誇張一些，只要搞定市場龍頭的那一間公司，就等於確保六成的市場供給是安全的。況且，監督一家大的，又比監督一百家小的容易許多。</p>
+
+<p>如果我是衛生當局，與其狗追尾巴原地繞圈，或是苦思如何撒下天羅地網奢求一網打盡，我會集中火力，先設法盯緊這些關鍵食材和關鍵公司的產銷流程，花最少力氣，追求最大的效果。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[雞翅、雞脖子與蒜味滷汁]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2014/03/26/a-preview-of-ingredient-network/"/>
+    <updated>2014-03-26T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2014/03/26/a-preview-of-ingredient-network</id>
+    <content type="html"><![CDATA[<p><img src="http://farm4.staticflickr.com/3831/13311471083_c7dc118070_o.png" alt="" /></p>
+
+<p>你可瞭解食材與食材之間千絲萬縷的曖昧關係？</p>
+
+<p>熱烈進行中的<a href="http://food.codefortomorrow.org/blog/2014/02/11/recipe-data-project/">食譜解密計畫</a>今天要分享一些初步的發現。</p>
+
+<p>在過去的數個月之間，我們從<a href="http://www.ytower.com.tw/">楊桃網</a>蒐集了 1500 道食譜，包括中式、日式和西式料理各 500 道。每道食譜都包含食譜名稱、食材和調味料名稱、份量以及作法等資訊，例如<a href="http://recipe.ytower.com.tw/Recipe/Detail/e4ff2193-0020-41e8-a340-cdedb0657066/%E8%BE%A3%E5%91%B3%E9%9B%9E%E8%83%97">辣味雞胗</a>。</p>
+
+<p><img src="https://farm8.staticflickr.com/7095/13424582143_16a15ac016_o.png" alt="" /></p>
+
+<p>接著，我們花了不少的時間「梳理」食材的名稱。（例如「雞爪」和「鳳爪」是否應該合併為同一種食材）</p>
+
+<p>然後，根據食材是否出現在同一道食譜，或是共同出現在同一道食譜的機率，計算出彼此之間的「親密程度」(如果你真的想知道，我們是用所謂的 <a href="http://en.wikipedia.org/wiki/Pointwise_mutual_information">pointwise mutual information</a> 來衡量食材之間的親密程度)，用彼此之間的距離遠近來表示。</p>
+
+<p>以文首的「食材社交網路圖」為例，就是根據那 500 道中式食譜所使用到 472 種獨立的食材或調味料，合計 7459 種關係所繪製。從圖的左下角可以清楚看到，「雞翅」、「雞脖子」與「蒜味滷汁」之間的關係相當密切。</p>
+
+<p>我們也發現有些食材或調味料經常出現於眾多的食譜之中，例如橄欖油（如下圖）。</p>
+
+<p>這表示有些食材是屬於「關鍵食材」，牽涉極廣。從食品安全的角度來看，由於市售食材種類繁多，實務上根本不可能達到完全把關。因此，不妨採用「打蛇打七寸」的策略，先抓出一些關鍵食材，進行重點式管理，或許能收事半功倍之效。</p>
+
+<p><img src="https://farm3.staticflickr.com/2837/13305289035_3221ff4888_o.png" alt="" /></p>
+
+<p>上述的成果僅能算是概念測試（proof of concept）， 證明了《食譜解密》目前的方向確實值得進一步的探索。</p>
+
+<p>《開放食庫》團隊夥伴 Huang-Wei Chang 認為，接下來應該要進行<a href="http://cft.io/discussion/124/%E8%A8%8E%E8%AB%96-%E9%96%8B%E6%94%BE%E9%A3%9F%E5%BA%AB%E7%99%BC%E5%B1%95%E8%A8%88%E5%8A%83%E8%88%87%E4%BB%BB%E5%8B%99%E6%B8%85%E5%96%AE">更具有規模性的「基礎建設」</a>，比方說：</p>
+
+<ul>
+<li>建立「食典」，或是關於食物的 common knowledge base。</li>
+<li>開發使用者介面，讓對食物有興趣、懂食品科學的人，也能一起校對或編輯各種食物的資料（類似一種針對食物資料的維基百科）。</li>
+</ul>
+
+
+<p>另一位團隊夥伴 Alicia Chiang 則想要利用這個資料庫探索食物的文化、地理與歷史淵源。因為食材的選擇，可以反映出當地農作物的狀況，例如法國菜的洋蔥量與奶油量很驚人，而寒冷地區的菜餚較少使用到綠葉類的蔬菜，但是各式瓜類、馬鈴薯與豆類則非常豐富。</p>
+
+<p>讓我們拭目以待！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[最常使用的食材竟然是...]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2014/02/26/most-common-recipe-ingredients/"/>
+    <updated>2014-02-26T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2014/02/26/most-common-recipe-ingredients</id>
+    <content type="html"><![CDATA[<p><img src="http://farm4.staticflickr.com/3673/12792969855_b78835d4fb_b.jpg" alt="" /></p>
+
+<p>料理食譜成千上萬，你可知道哪種食材最常被使用？</p>
+
+<p>答案居然是&hellip;水！</p>
+
+<p>開放食庫的<a href="http://food.codefortomorrow.org/blog/2014/02/11/recipe-data-project/">食譜解密小組</a>找來 1500 道食譜（中式、日式和西式），解析出超過 2000 種食材或配料成分，並計算各種食材的出現次數。我們發現，最常用的食材居然是水。</p>
+
+<p>緊接在後的，則是蒜和洋蔥。</p>
+
+<p>這只是個開始。</p>
+
+<p>我們打算繼續對食譜進行資料探勘，追本溯源，探索菜色派系的起源，推敲食材供需的微妙平衡。</p>
+
+<p>若您有任何建議或想法，歡迎來信 (<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#102;&#111;&#x6f;&#x64;&#x40;&#x63;&#111;&#100;&#101;&#x66;&#111;&#114;&#116;&#111;&#109;&#x6f;&#114;&#x72;&#x6f;&#119;&#46;&#111;&#x72;&#x67;">&#102;&#x6f;&#111;&#x64;&#64;&#99;&#111;&#100;&#101;&#x66;&#111;&#x72;&#116;&#111;&#109;&#x6f;&#x72;&#114;&#x6f;&#x77;&#46;&#x6f;&#114;&#x67;</a>)。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[食譜解密計畫啟動]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2014/02/11/recipe-data-project/"/>
+    <updated>2014-02-11T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2014/02/11/recipe-data-project</id>
+    <content type="html"><![CDATA[<p>You are what you eat.</p>
+
+<p>《開放食庫》之《食譜解密計畫》啟動囉！</p>
+
+<p>計畫目標（第零版）</p>
+
+<ol>
+<li>廣泛蒐集並整理食譜資料（中文優先、但不限中式料理）</li>
+<li>整理食物營養成分資料</li>
+<li>建立對外界服務的 Data API</li>
+<li>鼓勵各界熱情使用本資料庫</li>
+</ol>
+
+
+<p>詳情將會陸續公布。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[飲食革命才剛開始，同志請繼續努力]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/11/26/the-food-revolution-is-just-beginning/"/>
+    <updated>2013-11-26T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/11/26/the-food-revolution-is-just-beginning</id>
+    <content type="html"><![CDATA[<p><a href="http://codefortomorrow.org/">Code for Tomorrow</a> 所發起的《開放食庫》計畫 ，是一個以社群方式管理的計畫，而所有參與夥伴都是運用私人時間支援的志工。從今年四月份的<a href="https://hackpad.com/Earth-Day-Workshop-wHruQeE3h36" title="飲食革命才剛開始，同志請繼續努力">地球日工作坊</a>算起，迄今不過短短七個月的時間，我們已經達成一些值得自豪的成就：</p>
+
+<ul>
+<li>以「未立案之人民團體」的身分，和國內與食品相關的產官學機構進行過一對一的會議，包括<a href="http://www.bost.ey.gov.tw/">行政院科技會報</a>、<a href="http://www.twfoodtrace.org.tw/index.php">政府食品雲計畫的執行單位</a>、<a href="http://www.moeaidb.gov.tw/">經濟部工業局</a>、<a href="http://www.nutritiontaiwan.org.tw/">台灣營養基金會</a>、<a href="http://www.consumers.org.tw/">消費者文教基金會</a>、<a href="http://www.nutritiontaiwan.org.tw/">台灣營養基金會</a>、<a href="http://tfida.smartweb.tw/">台灣食品產業發展協會</a>、<a href="http://www.gs1tw.org/twct/web/index.jsp">商品條碼策進會</a>、以及一些知名不具的食品業界朋友等。非常感謝上述各單位的熱心指教，讓我們對於台灣食品供需的現況，有了相當程度的瞭解。</li>
+<li>盤點政府管理單位與食品業界所掌握的食品資料現況，確定我們想建立的食品資料庫，正是全國各界引頸企盼，卻無人站出來主動整合的。（不僅是資料有限的「食品雲」）</li>
+<li>成立了一個小小的<a href="https://www.facebook.com/groups/foodopendata/">《開放食庫》臉書社團</a>，讓任何對於食品議題有興趣的朋友，有個交換情報，理性討論的園地。</li>
+<li>感謝隸屬於<a href="http://www.tca.org.tw/">台北市電腦公會</a>的 Open Data Alliance 支持，以《開放食庫》為名，邀請各界人士參加，舉辦了一場食品營養的研討會。</li>
+<li>自行舉辦了一場專業級的<a href="http://food.codefortomorrow.org/blog/2013/11/17/workshop/">內部工作坊</a>，承蒙 <a href="http://www.uigathering.org/">UI Gathering 台灣使用者經驗設計協會</a>跨刀主持，並邀請民眾參與，成功地從消費者角度探索食品問題，更提出六個創新的解決構想。</li>
+<li>從《開放食庫》計畫之中，孕育出一個新創團隊 <a href="http://openeats.co/">OpenEats</a>，最近剛奪下 <a href="http://bnext.com.tw/article/view/id/30172">Startup Weekend 創業競賽的第一名，正在準備代表台北市參加全球性的城市創業競賽</a>。</li>
+</ul>
+
+
+<p>然而，在這七個月之內，我們也不幸目睹了數場重大的食品安全風暴，以及民眾對於攸關吃進肚子的食品產業的整體不信任感高升。</p>
+
+<p>《開放食庫》的標語：飲食革命，從認識你吃的食物開始。</p>
+
+<p>雖然我們已經達成一些小小的進度，然而，這個革命才剛開始，還有賴食品生產者、食品公司、營養專家、政府、周邊產業以及民眾共同努力，才有可能創造更美好的明天。</p>
+
+<p>我們相信，絕大部分的食品業者都是良心企業，只是缺乏適當的平台和消費者溝通；學者大多很專業，但是未必能用庶民語言向民眾解釋複雜的觀念或科學事實；而由於資訊極端不對稱，導致消費者越來越不信任食品業界或是政府的任何說法。</p>
+
+<p>這是一個資訊溝通的問題。先要有資料，才能設法溝通。</p>
+
+<p>《開放食庫》，當然會一路伴隨，提供協助，扮演消費者、食品業者與政府之間溝通的橋樑。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[收穫滿滿的內部工作坊]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/11/17/workshop/"/>
+    <updated>2013-11-17T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/11/17/workshop</id>
+    <content type="html"><![CDATA[<p><img src="http://farm4.staticflickr.com/3714/10900662996_43c9bc559f_o.jpg" alt="" /></p>
+
+<p>如果你想要確定每天究竟從嘴巴吃進什麼樣的食物，最好先認識「從農場到餐桌」這個複雜的過程，才能討論可能的改善提案。</p>
+
+<p>昨天，又一個奮進的星期六，超過二十位朋友齊聚台北，甚至有人大清早就從台南搭高鐵，以便趕上早上十點鐘開始的活動。</p>
+
+<p>感謝<a href="http://www.uigathering.org/">台灣使用者經驗設計協會 (UI Gathering)</a> 友情支援，義務協助籌備並主持這次的工作坊。</p>
+
+<p>透過使用者經驗工作坊的活動，我們僅以短短一天的時間，就達成下列的艱苦任務：</p>
+
+<ul>
+<li>食品供需現況盤點</li>
+<li>繪製參與者地圖 (stakeholder landscape)</li>
+<li>解決方案原型製作</li>
+<li>成果發表</li>
+</ul>
+
+
+<p>活動由<a href="http://www.lis186.com/">李易修</a>開場，介紹今天的任務與目標。</p>
+
+<p><img src="http://farm8.staticflickr.com/7344/10904185184_b7122cfcde_o.jpg" alt="" /></p>
+
+<p>接著，參加者自我介紹，然後按照各自對於食物的興趣，分為以下六組：</p>
+
+<ul>
+<li>豆漿組</li>
+<li>牛奶組</li>
+<li>有機蔬果組</li>
+<li>調味料組</li>
+<li>咖啡飲料組</li>
+<li>海鮮組</li>
+</ul>
+
+
+<p>各組成員看來都擁有極高的美術天份，生動地以一張圖描繪出該組想要探討的主題。</p>
+
+<p><img src="http://farm4.staticflickr.com/3682/10901152005_d12d78c681_o.png" alt="" /></p>
+
+<p>各組成員很辛苦地繪製出食品的 stakeholder landscape，包括生產者、進口商、加工商、通路商、檢驗與認證機構、政府單位等等，並且透過開放討論，慢慢地修正地圖的內容。</p>
+
+<p>例如下面這些讓人看得頭昏眼花的牛奶地圖。</p>
+
+<p><img src="http://farm3.staticflickr.com/2875/10897573733_f35fbc815c_o.jpg" alt="" /></p>
+
+<p>接著，就是熱烈的討論時間囉！</p>
+
+<p><img src="http://farm6.staticflickr.com/5478/10897328316_f6f08c9384_o.jpg" alt="" /></p>
+
+<p><img src="http://farm8.staticflickr.com/7351/10897334496_0efe2e270d_o.jpg" alt="" /></p>
+
+<p><img src="http://farm4.staticflickr.com/3777/10897424804_da1a5fe5ec_o.jpg" alt="" /></p>
+
+<p><img src="http://farm8.staticflickr.com/7350/10897581163_70f99dce75_o.jpg" alt="" /></p>
+
+<p>最後，則是解決提案的發表時間。</p>
+
+<p>大家總共提出了六個相當有創意的提案，比方說下面這個提案。</p>
+
+<p><img src="http://farm4.staticflickr.com/3711/10901360874_5197a158d5_o.jpg" alt="" /></p>
+
+<p>看看代表提案的 Mike 笑得多開心，想必對自己那組的提案相當得意！</p>
+
+<p>更多活動照片，請看<a href="http://www.flickr.com/photos/25900612@N05/tags/%E9%96%8B%E6%94%BE%E9%A3%9F%E5%BA%AB/">這裡</a>。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[食用油檢驗結果榜單 (2013.11.04)]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/11/04/cooking-oil-testing-results/"/>
+    <updated>2013-11-04T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/11/04/cooking-oil-testing-results</id>
+    <content type="html"><![CDATA[<p>截至今日 (2013.11.04) 為止，由<a href="http://www.fda.gov.tw/tc/site.aspx?sid=3693">衛生福利部食品藥物管理署</a>所公布的「油品脂肪酸組成不完全符合」查核結果，我們幫忙做成一個可以查詢的表格，方便大家看榜。</p>
+
+<ul>
+<li><a href="https://docs.google.com/spreadsheet/ccc?key=0Av429gOA1lgzdDRaWFg1aTJ3UnJ3MktVbWd0WjF4c3c&amp;usp=sharing">食用油檢驗結果清單</a></li>
+</ul>
+
+
+<p>請慢用。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[奮進的萬聖節週末]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/10/26/another-working-saturday/"/>
+    <updated>2013-10-26T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/10/26/another-working-saturday</id>
+    <content type="html"><![CDATA[<p><img src="http://farm4.staticflickr.com/3802/10587459734_bfa48df65e_o.jpg" alt="" /></p>
+
+<p>又一個陽光燦爛的週六早晨，又一次的團隊實體會議。</p>
+
+<p>適逢萬聖節的前一個週末，因此夥伴們先裝神弄鬼一番，應景、熱身、醒腦。</p>
+
+<p>由於最近的食品新聞被一群搞鬼的食品公司洗版，因此大家的討論都集中在相當熱門的食用油，例如：</p>
+
+<ul>
+<li>如何挑選適用的油品？（我該買橄欖油還是葵花油？）</li>
+<li>如何判斷特定品牌的產品是否安全？</li>
+<li>棉酚（抗氧化劑或是其他看不懂的成分）是什麼？</li>
+<li>我已經吃了很多後來才知道有毒的食品，該怎麼辦？</li>
+</ul>
+
+
+<p>為了解決上述的問題，大家又開始討論使用情境。</p>
+
+<p><img src="http://farm6.staticflickr.com/5516/10587415865_1a9e6abacd_o.jpg" alt="" /></p>
+
+<p>不要誤會你只看到一堆空白的手機螢幕，其實是攝影技術不好啦～</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[奮進的週六早晨]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/10/19/work-hard-on-saturday-morning/"/>
+    <updated>2013-10-19T00:00:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/10/19/work-hard-on-saturday-morning</id>
+    <content type="html"><![CDATA[<p><img src="http://farm6.staticflickr.com/5476/10355069745_80dd975abf_b.jpg" alt="" /></p>
+
+<p>放晴的星期六，早上九點半，《開放食庫》的 App Team Members 很準時地齊聚一堂，鑽研技術、按表操課、並且規劃系統開發的協同作業事宜。</p>
+
+<p>我們以相當認真的態度在推動《開放食庫》，把這個社群計畫當成虛擬公司在管理。光是為了服務設計，就花了好幾個月的時間，針對不同的利害關係人進行需求訪談，並且正在籌備團隊內部的使用者經驗設計工作坊，藉以凝聚團隊對於開放食庫計畫的共識，進而釐清計畫的發展策略。</p>
+
+<p>根據目前的方向，若是確實執行這個計畫的各個環節，前前後後大概需要一個百人團隊才能完成。</p>
+
+<p>現在，我們決定先擴編 Mobile App 系統開發的成員編制。</p>
+
+<p>如果你對於食品營養和安全有興趣，又具備以下任一專長與實務經驗，歡迎來信與我們聯絡 (<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#97;&#x73;&#107;&#64;&#x63;&#x6f;&#100;&#x65;&#102;&#111;&#x72;&#x74;&#111;&#x6d;&#x6f;&#114;&#114;&#x6f;&#x77;&#46;&#111;&#114;&#103;">&#97;&#115;&#x6b;&#x40;&#x63;&#111;&#x64;&#x65;&#x66;&#111;&#x72;&#x74;&#x6f;&#109;&#x6f;&#114;&#114;&#x6f;&#119;&#x2e;&#x6f;&#x72;&#103;</a>)，瞭解如何加入開放食庫的計畫團隊。</p>
+
+<ul>
+<li>App Developers (iOS &amp; Android)</li>
+<li>UI Designers (iOS &amp; Android)</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[志工職缺：iOS/Android UI Designers]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/09/23/app-ui-designer-wanted/"/>
+    <updated>2013-09-23T15:31:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/09/23/app-ui-designer-wanted</id>
+    <content type="html"><![CDATA[<p>《開放食庫》正在徵求 iOS 和 Android 的 UI designers.</p>
+
+<p>本計畫涵蓋範圍頗廣，包跨食品資料的蒐集、分析、一直到開發消費者和商業端的應用服務。</p>
+
+<p>其中，mobile apps 會是和消費者直接互動的重要媒介，而這一部分的工作，還處於需求分析的階段，也正是新朋友加入團隊的最好時機！因為，你可以從最開始就參與，貢獻專長。</p>
+
+<p>加入工作團隊的好處：</p>
+
+<ul>
+<li>和一群身負不同專長和經驗的朋友共事。</li>
+<li>接受一位具有深厚 app 產品研發與國際行銷經驗的高人帶領，從無到有，打造一個精采的 app product!</li>
+<li>發揮設計專長，改造社會。</li>
+</ul>
+
+
+<p>UI Designer Volunteer Job:</p>
+
+<ul>
+<li>工作需求：根據 Mobile UI Design Principles，討論 user cases、研究 user workflow、設計 user interface。</li>
+<li>工作時數：未來 3-6 個月，平均每週要花八個小時在「想」或是「做」。前三個月研發期，所需時數較多，後三個月為測試修正期，所需時間較少。</li>
+<li>專長要求：有 mobile app ui design 經驗。（註：Android designer，要懂 <a href="http://developer.android.com/sdk/installing/studio.html" title="Title">Android Studio</a>)</li>
+</ul>
+
+
+<p>參考資料：</p>
+
+<ul>
+<li><a href="http://youtu.be/gUobNDmHnzM" title="Title">Apple User Experience Guidelines</a></li>
+<li><a href="http://youtu.be/Jl3-lzlzOJI" title="Title">Google I/O 2013 &ndash; Android Design for UI Developers</a></li>
+<li><a href="http://youtu.be/to8hSys0AHw" title="Title">Android Studio Tutorial</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[忙碌充實的九月天]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/09/22/progress-report/"/>
+    <updated>2013-09-22T22:05:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/09/22/progress-report</id>
+    <content type="html"><![CDATA[<p><img src="http://farm6.staticflickr.com/5546/9889566395_8d31e742ec_o.png" alt="" /></p>
+
+<p>九月，真是開放食庫團隊工作的好時光。</p>
+
+<p>自9月4日舉辦一場團隊實體工作會議之後，大家就約好每週三晚間定期舉辦視訊會議（使用 Google Hangout），討論工作進度。即使是中秋連假的前一晚，都自強不息，照常開會。甚至還有人從南投烤肉現場 call in，參與討論！</p>
+
+<p>目前團隊成員的專業背景相當多元，包括負責 web 程式開發與資料庫設計的 Jimmy &amp; Mike，負責 mobile app development 的 Water, Chris, Lee &amp; George，擅長用影像說故事的 Eddie ＆ Artemis，具備豐富國際資訊產品開發經驗的 Ellis ＆ Schee，負責倒茶跑龍套的區區在下敝人我，以及其他知名不具、擁有各種專長秘技與深廣人脈的朋友。</p>
+
+<p>這一季的工作重點在於需求訪談。</p>
+
+<p>針對開放食庫資料庫與衍生服務的可能使用者，例如一般消費者、營養醫療專業人士、政府相關機關、食品製造公司與通路商，設法以面對面訪談方式，瞭解需求，以便設計與開發對應的服務。</p>
+
+<p>最近的行程包括：</p>
+
+<ul>
+<li>台北市電腦公會開放資料聯盟所舉辦的食品安全圓桌交流會 (9/4)</li>
+<li>公共電視採訪<a href="http://youtu.be/Sna7qGIkUEw">獨立特派員312集（原味覺醒）</a>（9/11 首播）</li>
+<li>與《食品追溯雲端服務建置及推廣計畫》（即政府食品雲計畫）負責團隊進行面對面交流 (9/12）</li>
+</ul>
+
+
+<p>正在進行或安排中的行程則包括：</p>
+
+<ul>
+<li>拜訪研究專長為營養學的黃清真教授（行政院衛生福利部食品衛生安全諮議委員、台灣營養基金會董事長、台灣大學生化科技學系教授）</li>
+<li>拜訪負責食品 GMP 認證的<a href="http://tfida.smartweb.tw/">台灣食品產業發展協會</a></li>
+<li>拜訪國內各大食品製造公司</li>
+<li>台北市電腦公會開放資料聯盟所舉辦的<a href="http://seminars.tca.org.tw/D15j00352.aspx">食品營養圓桌交流會</a> (9/25)</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[飲食革命，從《開放食庫》計畫開始]]></title>
+    <link href="http://food.codefortomorrow.org/blog/2013/09/10/hello-food-open-data/"/>
+    <updated>2013-09-10T19:10:00+00:00</updated>
+    <id>http://food.codefortomorrow.org/blog/2013/09/10/hello-food-open-data</id>
+    <content type="html"><![CDATA[<p>飲食革命，從認識你吃的食物開始。</p>
+
+<p>「《<a href="https://codefortomorrow.hackpad.com/Food-Open-Data-tXYcPHMBZ3D">開放食庫計畫</a>》
+正在蒐集各類市售包裝食品的產品標籤資訊，例如營養標示、成分和製造商資訊。有了這個食品資料庫，將能讓消費者吃得更聰明、更安心；並協助食品製造商了解消費者需求，透過使用回饋，研發更健康、更符合市場需求的產品。
+」</p>
+
+<p>以上是根據我們走訪各界，進行需求訪談之後所修訂的「任務宣言」，也算是《開放食庫計畫》目前的 working definition.</p>
+
+<p>《開放食庫計畫》最近不但進行了許多重要的前置準備活動，還有更多活動已經排入近期的行事曆了。</p>
+
+<p>在上個月，計畫團隊拜訪了<a href="http://www.gs1tw.org/twct/web/index.jsp">商品條碼策進會</a>
+(GS1 Taiwan)，瞭解產品條碼在台灣推行的實務與現況，並開始探討雙方合作的可行性。</p>
+
+<p>上星期五，計畫團隊拜訪了中央研究院的<a href="http://www.openfoundry.org/">自由軟體鑄造場</a> (Open Foundry)，請教授權模式。自由軟體鑄造場是國內研究開放軟體法律與授權最有經驗的單位之一，經常有政府機關或企業前往請教。我們非常感謝<a href="http://www.openfoundry.org/community/userprofile/lucien">林誠夏</a>與<a href="http://www.openfoundry.org/community/userprofile/tmk2005">葛冬梅</a>，即使因為吃燒烤不幸食物中毒，仍然抱病傳授開放軟體的國際授權經驗！（還真是契合主題啊～）</p>
+
+<p><img src="http://media.tumblr.com/cefa82728d1415fd92b5744760ad2ee3/tumblr_inline_mrtaidpeWB1qz4rgp.jpg" alt="開放軟體法律與授權教學" /></p>
+
+<p>同一天，我們也拜訪了中研院資訊所的<a href="http://www.iis.sinica.edu.tw/pages/swc/index_zh.html">陳昇瑋博士</a>，請教群眾外包的派工系統設計、以及影像辨識技術等議題。</p>
+
+<p><img src="http://media.tumblr.com/2f77e28f57de6158cf8cbb00a74f5512/tumblr_inline_mrtaffodRw1qz4rgp.jpg" alt="派工系統設計與討論" /></p>
+
+<p>搭上 <a href="http://registrano.com/events/dataweekend05">Data Weekend</a> 的便車，計畫團隊在週六舉辦了歡樂的團隊聚餐。平常只能在線上溝通討論的團隊成員，終於有機會一窺彼此的廬山真面目。透過 O2O 的方式，讓大家的認識更進一層，進而培養合作的默契。（換句話說，吃飯是促進工作效率的一個好方法）</p>
+
+<p>最近正在準備《開放食庫計畫》的 landing page，希望讓散落各處的資訊有個集中地點，以利對外界的溝通。至於產品資料庫和「群眾外拍」蒐集食品資訊用的 mobile app 都已經進入開發的階段。</p>
+
+<p>此外，即將成立的 <a href="http://seminars.tca.org.tw/D15j00328.aspx#enroll">Open Data 聯盟</a>將於9月25日下午舉辦圓桌討論會，將以《開放食庫計畫》為例，針對食品營養與安全的議題，邀請各界人士分享經驗。俟活動細節確定後，會再公布。</p>
+]]></content>
+  </entry>
+  
+</feed>
